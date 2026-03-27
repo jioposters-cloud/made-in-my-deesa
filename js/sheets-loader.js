@@ -1,4 +1,5 @@
-const SHEETS_CONFIG = { URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSJy-xzoHUd_Mv8wL4fZNJW9PO7u2bPsanbYNAQX2dxjyd8I3K1ZFUb_pNAfPSgbmq6PKS1pwtILbVJ/pub?gid=861706525&single=true&output=csv' };
+const SHEETS_CONFIG = { URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTYyFPzhjSOOAyGEwJ6D4JzhrwJdgnfLG7cnppPU2DC5iT4JRmCQ0Y7MFK1d93nNJuT9n1ebjLt_j8w/pub?gid=0&single=true&output=csv' };
+
 
 const FALLBACK_PRODUCTS = [];
 
