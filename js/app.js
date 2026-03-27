@@ -91,7 +91,7 @@ function setupSearch() {
 async function fetchProducts() {
     try {
         console.log('Loading My Deesa products from products.json...');
-        const response = await fetch('/products.json');
+        const response = await fetch('../products.json');
         if (!response.ok) throw new Error('fetch failed');
         
         products = await response.json();
