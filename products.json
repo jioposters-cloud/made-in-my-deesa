@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Handmade Pottery Vase",
+    "category": "Handicrafts",
+    "price": 599,
+    "description": "Beautiful handcrafted ceramic vase from local artisans",
+    "brand": "My Deesa",
+    "thumbnail": "https://via.placeholder.com/250x250?text=Pottery+Vase"
+  },
+  {
+    "id": 2,
+    "name": "Traditional Bandhani Saree",
+    "category": "Handicrafts",
+    "price": 1299,
+    "description": "Authentic Bandhani tie-dye saree handmade in Deesa",
+    "brand": "My Deesa",
+    "thumbnail": "https://via.placeholder.com/250x250?text=Bandhani+Saree"
+  },
+  {
+    "id": 3,
+    "name": "Wooden Carved Statue",
+    "category": "Handicrafts",
+    "price": 899,
+    "description": "Hand-carved wooden artwork by local craftsmen",
+    "brand": "My Deesa",
+    "thumbnail": "https://via.placeholder.com/250x250?text=Wooden+Statue"
+  },
+  {
+    "id": 4,
+    "name": "Brass Decorative Item",
+    "category": "Handicrafts",
+    "price": 449,
+    "description": "Polished brass home decoration piece",
+    "brand": "My Deesa",
+    "thumbnail": "https://via.placeholder.com/250x250?text=Brass+Item"
+  },
+  {
+    "id": 5,
+    "name": "Local Spice Mix",
+    "category": "General",
+    "price": 199,
+    "description": "Authentic Deesa spice blend - organic and handmade",
+    "brand": "My Deesa",
+    "thumbnail": "https://via.placeholder.com/250x250?text=Spice+Mix"
+  }
+]
