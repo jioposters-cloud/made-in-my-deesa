@@ -1,0 +1,48 @@
+name: Reset Git History
+
+on:
+  workflow_dispatch:
+
+jobs:
+  reset-history:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Configure Git user
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+      
+      - name: Reset repository to single initial commit
+        run: |
+          echo "Resetting git history..."
+          
+          # Create a new orphan branch to effectively reset history
+          git checkout --orphan reset-branch
+          
+          # Add all files to the new branch
+          git add -A
+          
+          # Create initial commit
+          git commit -m "Initial commit - Made in My Deesa e-commerce platform with Razorpay integration and Google Apps Script"
+          
+          # Delete the old main branch
+          git branch -D main
+          
+          # Rename reset-branch to main
+          git branch -m main
+          
+          echo "Successfully reset to single initial commit!"
+      
+      - name: Force push to GitHub
+        run: |
+          git push -u origin main --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

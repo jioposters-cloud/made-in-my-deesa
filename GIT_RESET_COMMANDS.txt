@@ -1,0 +1,81 @@
+===============================================
+GIT HISTORY RESET - COMMANDS TO EXECUTE
+===============================================
+
+To remove all old commits before today (March 27, 2026) and create a fresh initial commit,
+follow these exact steps in your terminal/command prompt.
+
+===============================================
+STEP 1: Navigate to your repository
+===============================================
+
+cd /path/to/made-in-my-deesa
+
+Replace /path/to/made-in-my-deesa with your actual repository path.
+For example:
+  Mac/Linux: cd ~/Projects/made-in-my-deesa
+  Windows: cd C:\Users\YourName\Documents\made-in-my-deesa
+
+===============================================
+STEP 2: Remove the old git history
+===============================================
+
+For Mac/Linux:
+rm -rf .git
+
+For Windows Command Prompt:
+rmdir /s .git
+
+For Windows PowerShell:
+Remove-Item -Recurse -Force .git
+
+===============================================
+STEP 3: Initialize a fresh git repository
+===============================================
+
+git init
+
+===============================================
+STEP 4: Add all files
+===============================================
+
+git add .
+
+===============================================
+STEP 5: Create the initial commit
+===============================================
+
+git commit -m "Initial commit - Made in My Deesa e-commerce platform with Razorpay integration and Google Apps Script"
+
+===============================================
+STEP 6: Set main as the default branch
+===============================================
+
+git branch -M main
+
+===============================================
+STEP 7: Add remote origin (if not already set)
+===============================================
+
+git remote add origin https://github.com/jioposters-cloud/made-in-my-deesa.git
+
+===============================================
+STEP 8: Force push to GitHub
+===============================================
+
+WARNING: This will replace ALL history on GitHub!
+Make sure you want to do this before proceeding.
+
+git push -u origin main --force
+
+===============================================
+COMPLETED!
+===============================================
+
+Your repository history has been reset!
+You now have a single initial commit with all current code.
+All old commits from March 17-20 have been removed.
+
+To verify:
+- Go to https://github.com/jioposters-cloud/made-in-my-deesa
+- Check the Commits page - you should see only 1 commit
